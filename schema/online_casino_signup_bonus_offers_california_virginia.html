@@ -1,0 +1,71 @@
+<!-- The JSON-LD schema provided includes two offers for signup bonuses at two online casinos, Casino A and Casino B. Both offers are applicable to new customers and target users in the states of California and Virginia. The offers are served through local online businesses (casinos) and are associated with the business function of online casino. The price specifications indicate that the offers are free and use the USD currency. -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@graph": [
+    {
+      "@type": "Offer",
+      "name": "Casino A Signup Bonus",
+      "description": "Get a 100% bonus up to $200 on your first deposit at Casino A.",
+      "eligibleCustomerType": "NewCustomer",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": 0,
+        "priceCurrency": "USD"
+      },
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "California"
+        },
+        {
+          "@type": "State",
+          "name": "Virginia"
+        }
+      ],
+      "offeredBy": {
+        "@type": "LocalBusiness",
+        "additionalType": "https://schema.org/OnlineBusiness",
+        "name": "Casino A",
+        "url": "https://www.examplecasinoA.com"
+      },
+      "businessFunction": {
+        "@type": "BusinessFunction",
+        "name": "Online Casino"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Casino B Signup Bonus",
+      "description": "Get a 100% bonus up to $200 on your first deposit at Casino B.",
+      "eligibleCustomerType": "NewCustomer",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": 0,
+        "priceCurrency": "USD"
+      },
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "California"
+        },
+        {
+          "@type": "State",
+          "name": "Virginia"
+        }
+      ],
+      "offeredBy": {
+        "@type": "LocalBusiness",
+        "additionalType": "https://schema.org/OnlineBusiness",
+        "name": "Casino B",
+        "url": "https://www.examplecasinoB.com"
+      },
+      "businessFunction": {
+        "@type": "BusinessFunction",
+        "name": "Online Casino"
+      }
+    }
+  ]
+}
+</script>
